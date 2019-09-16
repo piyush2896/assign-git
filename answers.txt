@@ -1,4 +1,26 @@
 * What is a gitignore file and what should it include for a Java project?
+  - A ".gitignore" file contains a list of files, mainly their extensions, which git must ignore tracking for. These are usually files which aren't useful for the collaborators. Examples of this can be ".exe" or ".class" files. These can also include files which represent our system specific configurations!
+  - Going over the ".gitignore" file belonging to this Java project - "assign-git", we see that files that are included in the gitignore file can be broadly categorized in 4 main categories (which can further be divided):
+      > Compiled files and packages: compiled ".class" files and packages like ".jar"
+      > IDE files: Files used by the Integrated Development Environment to maintain our system paths, like ".ctxt" files.
+      > Log files: Files keeping track of basic logs and VM crash logs.
+      > Other Temperorary files like J2ME files like .mtj.tmp.
+
+
 * What does fast-forward in the Git mean?
+  - In some cases a branch (say testbranch), other than master, might be somewhat ahead of the master. In the case where no conflicting commit are made to the master git will try to automatically merge the testbranch to the master. This scenario is known as a fast-forward in git.
+  - A clear explanation of this can be seen using the images at: https://ariya.io/2013/09/fast-forward-git-merge.
+  - Ref: ariya.io. (2019). Fast-Forward Git Merge. [online] Available at: https://ariya.io/2013/09/fast-forward-git-merge. 
+
 * Why should you have different branches?
+  - A branch, in git, are a copy of a project on which we build upon. There are many uses of having different branches in git.
+       > Every new feature in a project brings along changes which either (a) add to the code or (b) remove from the code. And one thing we know about code is that it is never perfect. This makes it important to make sure that the code at the main branch - master, is deployment ready and is not effected by the incoming code. To do so we can perform tests and other integration checks on the branch of the incoming code, before merging it with the master. 
+
 * In a project how many remote Git repositories do you usually have?
+  - There is usually 1 main remote Git repository. Although, there are certain practices which make the need of multiple remote repositories come into play.
+  - Usually, the best practice is to create your own copy, a.k.a. fork, of the main remote repository and then update code on the branch of the copy. This allows for a clean master code.
+
+
+
+
+
