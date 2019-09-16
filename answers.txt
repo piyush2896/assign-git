@@ -4,7 +4,7 @@
       > Compiled files and packages: compiled ".class" files and packages like ".jar"
       > IDE files: Files used by the Integrated Development Environment to maintain our system paths, like ".ctxt" files.
       > Log files: Files keeping track of basic logs and VM crash logs.
-      > Other Temperorary files like J2ME files.
+      > Other Temperorary files like J2ME files like .mtj.tmp.
 
 
 * What does fast-forward in the Git mean?
